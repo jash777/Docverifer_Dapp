@@ -96,7 +96,8 @@ const SimpleStorage = () => {
 			const r = await promise;
 			const added = await client.add(r)
 			const url = `https://ipfs.infura.io/ipfs/${added.path}`
-			console.log(url)
+			const hashpath = added.path
+			setCurrentContractVal(hashpath)
 			ipfsHash = await url
 			return url
 		}
@@ -161,9 +162,13 @@ const SimpleStorage = () => {
               </div>
               <div id="upload_cont_img"></div>
             <br></br>
+			
         </form>
+		<div class='text-center'>
 		<h4> IPFS HASH  </h4>
-		<h3>{ipfsHash}</h3>
+		<h3>{currentContractVal}</h3>
+		</div>
+		
     </div>
 	</div>
 
