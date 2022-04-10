@@ -1,5 +1,5 @@
-$ npx create-react-app simple_storage
-$ cd simple_storage
+$ npx create-react-app AppName
+$ cd AppName
 
 $ npm install ethers
 
