@@ -6,7 +6,6 @@ import SimpleStorage_abi from './contracts/SimpleStorage_abi.json'
 var CryptoJS = require("crypto-js");
 const client = create('https://ipfs.infura.io:5001/api/v0')
 
-
 const SimpleStorage = () => {
 
 	// deploy simple storage contract and paste deployed contract address here. This value is local ganache chain
@@ -136,13 +135,7 @@ const SimpleStorage = () => {
 		
 		<div>
 
-<div ><div style={{
-	position:'right'
-}}>
-<button  type="button" class="btn btn-primary btn-lg" onClick={connectWalletHandler}>{connButtonText}</button></div></div>
-			<div>
-				<h3>Address: {defaultAccount}</h3>
-			</div>
+			
 		{/* <h4> {"Get/Set Contract interaction"} </h4>
 			<button onClick={connectWalletHandler}>{connButtonText}</button>
 			<div>
@@ -163,12 +156,18 @@ const SimpleStorage = () => {
 
 
 <div style={{
-      padding:'16.237%',
-      height:'50%',
+      width:'100%',
+	  height:'593px',
       background: `url(https://wallpaperaccess.com/full/1267583.jpg)`,
-      backgroundRepeat: `no-repeat`,
+      backgroundRepeat: `repeat`,
       backgroundSize: `center`}}  >
-      <br></br>      <br></br>    <br></br>    
+      <br></br>      <br></br>    <br></br>   
+	  <br></br>
+
+<div class="text-center" ><div>
+<button  type="button" class="btn btn-primary btn-lg" onClick={connectWalletHandler}>{connButtonText}</button>
+<br></br>				<h3>Address: {defaultAccount}</h3>
+</div></div> 
 
         <form onSubmit={setHandler} >
           <input type='password' id='setText' className="form-control" placeholder="Enter Password" minRows="4" name="text" />

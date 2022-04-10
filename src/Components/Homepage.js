@@ -8,14 +8,23 @@ function Homepage(){
 
     return(
       <div style={{
-        padding:'20.09%',
-        height:'50%',
+        width:'92%',
+	      height:'593px',
         fontColor:'Red',
         background: `url(https://wallpaperaccess.com/full/1267583.jpg)`,
         backgroundRepeat: `no-repeat`,
         backgroundSize: `center`}}>
+          <div style={{
+            position:'relative',
+            left:'100px',
+            top:'250px',
+            fontFamily:"Times New Roman", Times: 'serif', fontSize: '25px',
+          }}> 
+          Welcome To DocVerify a  Document Verification App     Based on Blockchain Technology  and  Dcentralized Storage 
+           <h5 style={{}}>    </h5> <br></br> <h6></h6>
 
-<p className="box" style={{font: ' small-caps bold 12px/30px Georgia serif'}}> <h5 style={{textAlign: 'justify' , fontFamily:"Times New Roman", Times: 'serif', fontSize: '25px',  textAlign: 'center' }}>    Welcome To DocVerify a  Document Verification App     Based on Blockchain Technology  and  Dcentralized Storage </h5> <br></br> <h6></h6> </p>
+          </div>
+
 
 
         </div>

@@ -44,7 +44,7 @@ const ipfs = ipfsAPI('ipfs.infura.io', '5001', {protocol: 'https'});
   }
     return (
       <div  style={{
-        padding:'15.567%',
+        padding:'9.867%',
         height:'50%',
         background: `url(https://wallpaperaccess.com/full/1267583.jpg)`,
         backgroundRepeat: `no-repeat`,
@@ -52,7 +52,7 @@ const ipfs = ipfsAPI('ipfs.infura.io', '5001', {protocol: 'https'});
         <div>
         </div>
 
-        <div style={{marginBottom: '30px' , variant : "outlined",marginLeft:'500px'}} > <h2 style={{font: ' small-caps bold 12px/30px Georgia serif' , fontSize: '25px'}}>Student Page </h2>
+        <div style={{marginBottom: '30px' , variant : "outlined",marginLeft:'400px'}} > <h2 style={{font: ' small-caps bold 12px/30px Georgia serif' , fontSize: '25px'}}>Student Page </h2>
         <h3 style={{font: ' small-caps bold 12px/30px Georgia serif' , fontSize: '20px'}}>Enter Ipfs Hash </h3>
         <br></br>
 

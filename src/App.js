@@ -14,7 +14,7 @@ function App() {
     
     <nav className="navbar navbar-expand-lg navbar-light bg-info">
       
-<a className="navbar-brand text-white" href="/">DocVeifier</a>
+<a className="navbar-brand text-white" href="/">DocVeifer</a>
 <button className="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span className="navbar-toggler-icon" />
 </button>

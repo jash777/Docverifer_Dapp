@@ -42,7 +42,7 @@ export default class SignupPage extends React.Component {
   render() {
     return (
       <div style={{
-        padding:'13.987%',
+        padding:'9.4%',
         height:'50%',
         background: `url(https://wallpaperaccess.com/full/1267583.jpg)`,
         backgroundRepeat: `no-repeat`,

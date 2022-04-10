@@ -5,7 +5,7 @@ class Report extends Component{
     render(){
         return(
             <div style={{
-                padding:'13.92%',
+                padding:'6.82%',
                 height:'50%',
                 background: `url(https://wallpaperaccess.com/full/1267583.jpg)`,
                 backgroundRepeat: `no-repeat`,
