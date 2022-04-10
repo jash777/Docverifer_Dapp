@@ -36,6 +36,9 @@ function App() {
 <li className="nav-item  text-white">
 <Link className='nav-link text-white' to='Report'>Report <span className="sr-only">(current)</span> </Link>
 </li>
+<li className="nav-item  text-white">
+<Link className='nav-link text-white' to='SimpleStorage'>Dev <span className="sr-only">(current)</span> </Link>
+</li>
 <li className="nav-item ">
 </li>
 </ul>

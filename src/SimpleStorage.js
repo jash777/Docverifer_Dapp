@@ -67,14 +67,12 @@ const SimpleStorage = () => {
 		let tempContract = new ethers.Contract(contractAddress, SimpleStorage_abi, tempSigner);
 		setContract(tempContract);	
 	}
+	let ipfsHash =  '';
 
 	const setHandler = (event) => {
 		event.preventDefault();
-
 		let key = event.target.setText.value
 		let file = event.target.setFile.files[0]
-		let url
-
 		const promise = new Promise((resolve) => {
 			const reader = new FileReader()
 			reader.onload = function () {
@@ -88,7 +86,8 @@ const SimpleStorage = () => {
 			}
 			reader.readAsDataURL(file)
 		  })
-	  
+	
+
 		  promise.then(file => {
 			console.log('File Result : -- '+file)
 		  })
@@ -98,6 +97,7 @@ const SimpleStorage = () => {
 			const added = await client.add(r)
 			const url = `https://ipfs.infura.io/ipfs/${added.path}`
 			console.log(url)
+			ipfsHash = await url
 			return url
 		}
 
@@ -109,52 +109,27 @@ const SimpleStorage = () => {
 		let a = await print()
 		console.log("aaa   :"+ a )
 		contract.set(a)
+		
 	}
-
 	add()
 
 
 
 
+	
 
+
+
+		console.log("III :--"+ipfsHash)
 		console.log(event.target.setFile.files[0])
 		console.log('sending ' + event.target.setText.value + ' to the contract');
 		
 	}
 
-
-
-
-
-
-
-
-
 	
 	return (
 		
 		<div>
-
-			
-		{/* <h4> {"Get/Set Contract interaction"} </h4>
-			<button onClick={connectWalletHandler}>{connButtonText}</button>
-			<div>
-				<h3>Address: {defaultAccount}</h3>
-			</div>
-			<form onSubmit={setHandler}>
-
-				
-				<input id="setText"  type="text"/>
-				<button type={"submit"}> Update Contract </button>
-			</form> */}
-			{/* <div>
-			<button onClick={getCurrentVal} style={{marginTop: '5em'}}> Get Current Contract Value </button>
-			</div>
-			{currentContractVal}
-			{errorMessage} */}
-
-
-
 <div style={{
       width:'100%',
 	  height:'593px',
@@ -187,7 +162,8 @@ const SimpleStorage = () => {
               <div id="upload_cont_img"></div>
             <br></br>
         </form>
-		<h4> </h4>
+		<h4> IPFS HASH  </h4>
+		<h3>{ipfsHash}</h3>
     </div>
 	</div>
 
